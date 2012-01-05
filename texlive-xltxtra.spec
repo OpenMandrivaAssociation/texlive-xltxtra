@@ -6,7 +6,7 @@
 # catalog-version 0.5e
 Name:		texlive-xltxtra
 Version:	0.5e
-Release:	1
+Release:	2
 Summary:	"Extras" for LaTeX users of XeTeX
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/xltxtra
