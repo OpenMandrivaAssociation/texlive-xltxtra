@@ -1,12 +1,12 @@
-# revision 19809
+# revision 30466
 # category Package
 # catalog-ctan /macros/latex/contrib/xltxtra
-# catalog-date 2010-09-19 16:45:28 +0200
+# catalog-date 2012-03-06 14:36:12 +0100
 # catalog-license lppl
 # catalog-version 0.5e
 Name:		texlive-xltxtra
 Version:	0.5e
-Release:	2
+Release:	3
 Summary:	"Extras" for LaTeX users of XeTeX
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/xltxtra
@@ -18,6 +18,7 @@ BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
 Requires(post):	texlive-kpathsea
+Requires:	texlive-metalogo
 
 %description
 The package loads the fixltx2e package from the LaTeX
@@ -58,16 +59,3 @@ package for typesetting the XeTeX and XeLaTeX logos.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Thu Jan 05 2012 Paulo Andrade <pcpa@mandriva.com.br> 0.5e-2
-+ Revision: 757662
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 0.5e-1
-+ Revision: 719943
-- texlive-xltxtra
-- texlive-xltxtra
-- texlive-xltxtra
-
