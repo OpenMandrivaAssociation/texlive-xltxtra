@@ -5,8 +5,8 @@
 # catalog-license lppl
 # catalog-version 0.5e
 Name:		texlive-xltxtra
-Version:	0.5e
-Release:	11
+Version:	0.6
+Release:	1
 Summary:	"Extras" for LaTeX users of XeTeX
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/xltxtra
