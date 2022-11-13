@@ -1,19 +1,13 @@
-# revision 30466
-# category Package
-# catalog-ctan /macros/latex/contrib/xltxtra
-# catalog-date 2012-03-06 14:36:12 +0100
-# catalog-license lppl
-# catalog-version 0.5e
 Name:		texlive-xltxtra
-Version:	0.6
-Release:	2
+Version:	56594
+Release:	1
 Summary:	"Extras" for LaTeX users of XeTeX
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/xltxtra
 License:	LPPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/xltxtra.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/xltxtra.doc.tar.xz
-Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/xltxtra.source.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/xltxtra.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/xltxtra.doc.r%{version}.tar.xz
+Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/xltxtra.source.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -34,25 +28,24 @@ to load it explicitly. The package relies on the metalogo
 package for typesetting the XeTeX and XeLaTeX logos.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
-%{_texmfdistdir}/tex/latex/xltxtra/xltxtra.sty
-%doc %{_texmfdistdir}/doc/latex/xltxtra/README
-%doc %{_texmfdistdir}/doc/latex/xltxtra/xltxtra.pdf
+%{_texmfdistdir}/tex/xelatex/xltxtra
+%doc %{_texmfdistdir}/doc/xelatex/xltxtra
 #- source
-%doc %{_texmfdistdir}/source/latex/xltxtra/xltxtra.dtx
-%doc %{_texmfdistdir}/source/latex/xltxtra/xltxtra.ins
+%doc %{_texmfdistdir}/source/xelatex/xltxtra
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1 -a2
+%setup -c -a1 -a2
+%autopatch -p1
 
 %build
 
