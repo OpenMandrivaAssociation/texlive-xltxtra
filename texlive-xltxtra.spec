@@ -3,7 +3,7 @@ Version:	56594
 Release:	2
 Summary:	"Extras" for LaTeX users of XeTeX
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/xltxtra
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/xltxtra
 License:	LPPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/xltxtra.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/xltxtra.doc.r%{version}.tar.xz
